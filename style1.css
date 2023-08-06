@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #121212;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Utilitise style */
+.about-section .container{
+    max-width: 1200px;
+    margin: 250px auto;
+
+}
+
+.about-section .banner{
+    height: 100vh;
+    
+}
+.about-section .banner-left{
+    flex: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.about-section .banner-title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.about-section .banner-title::before{
+    content: 'Programming Hero|';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #22bedd;
+    animation: typing 3s linear infinite;
+}
+.about-section .banner-details{
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.about-section .btn{
+    outline: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #22bedd;
+    border: 4px solid #22bedd;
+}
+.about-section .btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #22bedd;
+    transition: .5s linear;
+}
+.about-section .banner-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .banner-right img{
+    border: 4px solid #22bedd;
+}
+
+.about-section .section-titile{  
+    text-align: center;
+}
+.about-section .section-titile h1{
+    font-size: 30px;
+    color: #22bedd;
+    margin: 50px 0;
+    border-left: 2px solid #22bedd;
+    border-right: 2px solid #22bedd;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: .8;
+}
+
+.about-section .photos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.about-section .photo{
+    width: 280px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+.about-section .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-section .border{
+    background-color: #fff;
+    position: absolute;
+    transition: .7s ease-in-out;
+}
+.about-section .border.top, .border.bottom{
+    height: 4px;
+    width: 270px;
+}
+.about-section .border.left, .border.right{
+    height: 270px;
+    width: 4px;
+}
+.about-section .border.top{
+    top: 5px;
+    right: 100%;
+}
+.about-section .border.bottom{
+    bottom: 5px;
+    left: 100%;
+}
+.about-section .border.left{
+    left: 5px;
+    top: 100%;
+}
+.about-section .border.right{
+    right: 5px;
+    bottom: 100%;
+}
+
+.about-section .photo:hover .border.top{
+    right: 5px;
+}
+.about-section .photo:hover .border.bottom{
+    left: 5px;
+}
+.about-section .photo:hover .border.left{
+    top: 5px;
+}
+.about-section .photo:hover .border.right{
+    bottom: 5px;
+}
+
+.about-section .photo-detials{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    padding-left: 35px;
+    color: whitesmoke;
+    transform: translateY(400px);
+    transition: .5s ease-out;
+}
+
+.about-section .photo:hover .photo-detials{
+    transform: translateY(200px);
+}
+
+.about-section .photo::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: .4s linear;
+}
+.about-section .photo:hover::before{
+    opacity: 1;
+}
+
+
+
+
+/* Media Key  */
+
+@keyframes typing {
+    0% {
+        content: 'P|';
+    }
+
+    4% {
+        content: 'Pr|';
+    }
+
+    8% {
+        content: 'Pro|';
+    }
+
+    12% {
+        content: 'Prog|';
+    }
+
+    16% {
+        content: 'Progr|';
+    }
+
+    20% {
+        content: 'Progra|';
+    }
+
+    24% {
+        content: 'Program|';
+    }
+
+    28% {
+        content: 'Programm|';
+    }
+
+    32% {
+        content: 'Programmi|';
+    }
+
+    36% {
+        content: 'Programmin|';
+    }
+
+    40% {
+        content: 'Programming|';
+    }
+
+    44% {
+        content: 'Programming |';
+    }
+
+    48% {
+        content: 'Programming h|';
+    }
+
+    52% {
+        content: 'Programming he|';
+    }
+
+    56% {
+        content: 'Programming her|';
+    }
+
+    60% {
+        content: 'Programming hero|';
+    }
+
+    64%,
+    83% {
+        content: 'Programming hero|';
+    }
+
+    84% {
+        content: 'Programming her|';
+    }
+
+    85% {
+        content: 'Programming he|';
+    }
+
+    86% {
+        content: 'Programming h|';
+    }
+
+    87% {
+        content: 'Programming |';
+    }
+
+    88% {
+        content: 'Programming|';
+    }
+
+    89% {
+        content: 'Programmin|';
+    }
+
+    90% {
+        content: 'Programmi|';
+    }
+
+    91% {
+        content: 'Programm|';
+    }
+
+    92% {
+        content: 'Program|';
+    }
+
+    93% {
+        content: 'Progra|';
+    }
+
+    94% {
+        content: 'Progr|';
+    }
+
+    95% {
+        content: 'Prog|';
+    }
+
+    96% {
+        content: 'Pro|';
+    }
+
+    97% {
+        content: 'Pr|';
+    }
+
+    98% {
+        content: 'P|';
+    }
+
+    99% {
+        content: '|';
+    }
+
+    100% {
+        content: '|';
+    }
+}
