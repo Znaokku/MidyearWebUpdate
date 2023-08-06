@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.head-section {
+    height: auto;
+}
+.menu-section {
+    height: auto;
+    padding: auto;
+}
+.contact-section {
+    height: auto;
+    margin-top: 28vh;
+    margin-bottom: 27vh;
+}
+.about-section {
+    height: auto;
+}
